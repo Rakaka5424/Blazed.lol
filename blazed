@@ -1,0 +1,475 @@
+if not LPH_OBFUSCATED then
+    getfenv().LPH_NO_VIRTUALIZE = function(f) return f end;
+end
+
+local gui = 
+{
+	blazedLoader = Instance.new("ScreenGui"),
+	Frame = Instance.new("Frame"),
+	UICorner = Instance.new("UICorner"),
+	TextLabel = Instance.new("TextLabel"),
+	TextLabel_1 = Instance.new("TextLabel"),
+	signin_load = Instance.new("TextButton"),
+	UICorner_1 = Instance.new("UICorner"),
+	UIStroke = Instance.new("UIStroke"),
+	TextLabel_2 = Instance.new("TextLabel"),
+	fps_checkbox = Instance.new("Frame"),
+	UICorner_2 = Instance.new("UICorner"),
+	UICorner_3 = Instance.new("UICorner"),
+	UIStroke_1 = Instance.new("UIStroke"),
+	ImageLabel = Instance.new("ImageLabel"),
+	fpscheckbox_button = Instance.new("TextButton"),
+	TextLabel_3 = Instance.new("TextLabel"),
+	UICorner_4 = Instance.new("UICorner"),
+	UIStroke_2 = Instance.new("UIStroke"),
+	UIStroke_3 = Instance.new("UIStroke"),
+}
+
+gui.blazedLoader.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+gui.blazedLoader.Name = "blazedLoader"
+gui.blazedLoader.Parent = game:GetService("CoreGui")
+
+gui.Frame.BorderSizePixel = 0
+gui.Frame.Size = UDim2.new(0, 396, 0, 249)
+gui.Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+gui.Frame.Name = "Frame"
+gui.Frame.Position = UDim2.new(0.396226, 0, 0.362031, 0)
+gui.Frame.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+gui.Frame.Parent = gui.blazedLoader
+
+gui.UICorner.Name = "UICorner"
+gui.UICorner.CornerRadius = UDim.new(0, 12)
+gui.UICorner.Parent = gui.Frame
+
+gui.TextLabel.BorderSizePixel = 0
+gui.TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gui.TextLabel.FontFace = Font.new("rbxassetid://11702779517", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+gui.TextLabel.TextSize = 30
+gui.TextLabel.Position = UDim2.new(0.244949, 0, 0.11245, 0)
+gui.TextLabel.Size = UDim2.new(0, 147, 0, 50)
+gui.TextLabel.Name = "TextLabel"
+gui.TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+gui.TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+gui.TextLabel.Text = "Blazed"
+gui.TextLabel.BackgroundTransparency = 1
+gui.TextLabel.Parent = gui.Frame
+
+gui.TextLabel_1.BorderSizePixel = 0
+gui.TextLabel_1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gui.TextLabel_1.FontFace = Font.new("rbxassetid://11702779517", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+gui.TextLabel_1.TextSize = 20
+gui.TextLabel_1.Position = UDim2.new(0.479798, 0, 0.11245, 0)
+gui.TextLabel_1.Size = UDim2.new(0, 106, 0, 57)
+gui.TextLabel_1.Name = "TextLabel"
+gui.TextLabel_1.TextColor3 = Color3.fromRGB(227, 181, 200)
+gui.TextLabel_1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+gui.TextLabel_1.Text = "v3.1.1"
+gui.TextLabel_1.BackgroundTransparency = 1
+gui.TextLabel_1.Parent = gui.Frame
+
+gui.signin_load.BorderSizePixel = 0
+gui.signin_load.BackgroundColor3 = Color3.fromRGB(157, 125, 138)
+gui.signin_load.FontFace = Font.new("rbxassetid://11702779517", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+gui.signin_load.TextColor3 = Color3.fromRGB(255, 255, 255)
+gui.signin_load.Position = UDim2.new(0.161616, 0, 0.598394, 0)
+gui.signin_load.TextSize = 14
+gui.signin_load.Size = UDim2.new(0, 274, 0, 31)
+gui.signin_load.Name = "signin_load"
+gui.signin_load.BorderColor3 = Color3.fromRGB(0, 0, 0)
+gui.signin_load.Text = "Sign In"
+gui.signin_load.Active = true
+gui.signin_load.Selectable = true
+gui.signin_load.Parent = gui.Frame
+
+gui.UICorner_1.Name = "UICorner"
+gui.UICorner_1.Parent = gui.signin_load
+
+gui.UIStroke.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+gui.UIStroke.Name = "UIStroke"
+gui.UIStroke.Thickness = 1.4
+gui.UIStroke.Color = Color3.fromRGB(25, 25, 25)
+gui.UIStroke.Parent = gui.signin_load
+
+gui.TextLabel_2.BorderSizePixel = 0
+gui.TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gui.TextLabel_2.FontFace = Font.new("rbxassetid://11702779517", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+gui.TextLabel_2.TextSize = 15
+gui.TextLabel_2.Position = UDim2.new(0.290404, 0, 0.690763, 0)
+gui.TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+gui.TextLabel_2.Name = "TextLabel"
+gui.TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+gui.TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+gui.TextLabel_2.Text = "Boost FPS"
+gui.TextLabel_2.BackgroundTransparency = 1
+gui.TextLabel_2.Parent = gui.Frame
+
+gui.fps_checkbox.BorderSizePixel = 0
+gui.fps_checkbox.Size = UDim2.new(0, 20, 0, 20)
+gui.fps_checkbox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+gui.fps_checkbox.Name = "fps_checkbox"
+gui.fps_checkbox.Position = UDim2.new(0.383838, 0, 0.751004, 0)
+gui.fps_checkbox.BackgroundColor3 = Color3.fromRGB(157, 125, 138)
+gui.fps_checkbox.Parent = gui.Frame
+
+gui.UICorner_2.Name = "UICorner"
+gui.UICorner_2.CornerRadius = UDim.new(0, 5)
+gui.UICorner_2.Parent = gui.fps_checkbox
+
+gui.UICorner_3.Name = "UICorner"
+gui.UICorner_3.Parent = gui.fps_checkbox
+
+gui.UIStroke_1.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+gui.UIStroke_1.Name = "UIStroke"
+gui.UIStroke_1.Thickness = 1.4
+gui.UIStroke_1.Color = Color3.fromRGB(25, 25, 25)
+gui.UIStroke_1.Parent = gui.fps_checkbox
+
+gui.ImageLabel.BorderSizePixel = 0
+gui.ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gui.ImageLabel.Image = "http://www.roblox.com/asset/?id=9754130783"
+gui.ImageLabel.Size = UDim2.new(0, 20, 0, 20)
+gui.ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+gui.ImageLabel.Name = "ImageLabel"
+gui.ImageLabel.BackgroundTransparency = 1
+gui.ImageLabel.Parent = gui.fps_checkbox
+
+gui.fpscheckbox_button.BorderSizePixel = 0
+gui.fpscheckbox_button.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gui.fpscheckbox_button.FontFace = Font.new("rbxasset://fonts/families/SourceSansPro.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+gui.fpscheckbox_button.TextColor3 = Color3.fromRGB(0, 0, 0)
+gui.fpscheckbox_button.Position = UDim2.new(-2.7, 0, 0, 0)
+gui.fpscheckbox_button.TextSize = 14
+gui.fpscheckbox_button.Size = UDim2.new(0, 200, 0, 20)
+gui.fpscheckbox_button.Name = "fpscheckbox_button"
+gui.fpscheckbox_button.BorderColor3 = Color3.fromRGB(0, 0, 0)
+gui.fpscheckbox_button.Text = ""
+gui.fpscheckbox_button.Active = true
+gui.fpscheckbox_button.BackgroundTransparency = 1
+gui.fpscheckbox_button.Selectable = true
+gui.fpscheckbox_button.Parent = gui.fps_checkbox
+
+gui.TextLabel_3.BorderSizePixel = 0
+gui.TextLabel_3.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+gui.TextLabel_3.FontFace = Font.new("rbxassetid://11702779517", Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+gui.TextLabel_3.TextSize = 14
+gui.TextLabel_3.Position = UDim2.new(0.161616, 0, 0.425703, 0)
+gui.TextLabel_3.Size = UDim2.new(0, 274, 0, 36)
+gui.TextLabel_3.Name = "TextLabel"
+gui.TextLabel_3.TextColor3 = Color3.fromRGB(50, 50, 50)
+gui.TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+gui.TextLabel_3.Text = "   "..tostring(LRM_LinkedDiscordID)..""
+gui.TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+gui.TextLabel_3.Parent = gui.Frame
+
+gui.UICorner_4.Name = "UICorner"
+gui.UICorner_4.Parent = gui.TextLabel_3
+
+gui.UIStroke_2.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+gui.UIStroke_2.Name = "UIStroke"
+gui.UIStroke_2.Thickness = 1.4
+gui.UIStroke_2.Color = Color3.fromRGB(25, 25, 25)
+gui.UIStroke_2.Parent = gui.TextLabel_3
+
+gui.UIStroke_3.ApplyStrokeMode = Enum.ApplyStrokeMode.Border
+gui.UIStroke_3.Name = "UIStroke"
+gui.UIStroke_3.Thickness = 1.4
+gui.UIStroke_3.Color = Color3.fromRGB(25, 25, 25)
+gui.UIStroke_3.Parent = gui.Frame
+
+
+
+gui.fpscheckbox_button.MouseButton1Click:Connect(function()
+	if gui.fps_checkbox.BackgroundColor3 == Color3.fromRGB(157, 125, 138) then
+		gui.fps_checkbox.BackgroundColor3 = Color3.fromRGB(20,20,20) 
+		gui.ImageLabel.Visible = false
+		getgenv().boostframes = false
+	elseif gui.fps_checkbox.BackgroundColor3 == Color3.fromRGB(20,20,20) then
+		getgenv().boostframes = true
+		gui.fps_checkbox.BackgroundColor3 = Color3.fromRGB(157, 125, 138)
+		gui.ImageLabel.Visible = true
+		end
+end)
+
+gui.signin_load.MouseButton1Click:Connect(function()
+gui.blazedLoader:Destroy()
+    local loadingtime = tick()
+    local notificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/laagginq/ui-libraries/main/xaxas-notification/src.lua"))();
+    local notifications = notificationLibrary.new({            
+        NotificationLifetime = 5, 
+        NotificationPosition = "Middle",
+        
+        TextFont = Enum.Font.Code,
+        TextColor = Color3.fromRGB(255, 255, 255),
+        TextSize = 15,
+        
+        TextStrokeTransparency = 0, 
+        TextStrokeColor = Color3.fromRGB(0, 0, 0)
+    });
+    
+    local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
+    local ANotify = AkaliNotif.Notify;
+    
+    
+    function Kick(Reason)
+        game.Players.LocalPlayer:Kick(Reason)
+    end
+    
+    getgenv().NotiMode = "Roblox"
+    
+    function Notifications(NotiINFO)
+        if getgenv().NotiMode == "Roblox" then
+            game:GetService("StarterGui"):SetCore("SendNotification",{
+                Title = "Blazed", -- Required
+                Text = NotiINFO, -- Required
+                Icon = "rbxassetid://15115954522" -- Optional
+            })
+        else
+            if getgenv().NotiMode == "Xaxa" then
+                notifications:BuildNotificationUI();
+                notifications:Notify(NotiINFO);
+        else
+            if getgenv().NotiMode == "Akali" then
+                ANotify({
+                    Description = NotiINFO;
+                    Title = "Blazed";
+                    Duration = 1;
+                    });
+                else
+                    Kick('[blazed]: Notification Error, please contact support if this continues.')
+        end
+            end
+                end
+            end
+    
+    
+    if game.PlaceId == 11883610532 or game.PlaceId == 12128125888 or game.PlaceId == 12543953865 then 
+        print("[blazed]: Five Duels Detected")
+        getgenv().fdDetected = true
+    
+    getgenv().AimPart = "HumanoidRootPart" 
+    getgenv().OldAimPart = "HumanoidRootPart"
+    getgenv().AimlockKey = "q"
+    getgenv().AimRadius = 5
+    getgenv().ThirdPerson = true 
+    getgenv().FirstPerson = true
+    getgenv().TeamCheck = false 
+    getgenv().PredictMovement = false
+    getgenv().PredictionVelocity = 7.22
+    
+    getgenv().Smoothness = false
+    getgenv().SmoothnessAmount = 1
+    getgenv().EasingStyle = Enum.EasingStyle.Elastic
+    
+    getgenv().Notifications = false
+    
+    getgenv().AutoPrediction = false
+    getgenv().UnlockOnDeath = false
+    getgenv().Shake = false
+    getgenv().ShakePower = 0
+    
+    local Players, Uis, RService, SGui = game:GetService"Players", game:GetService"UserInputService", game:GetService"RunService", game:GetService"StarterGui";
+    local Client, Mouse, Camera, CF, RNew, Vec3, Vec2 = Players.LocalPlayer, Players.LocalPlayer:GetMouse(), workspace.CurrentCamera, CFrame.new, Ray.new, Vector3.new, Vector2.new;
+    local Aimlock, MousePressed, CanNotify = true, false, false;
+    local AimlockTarget
+    local OldPre;
+    
+    
+    
+    getgenv().WorldToViewportPoint = function(P)
+        return Camera:WorldToViewportPoint(P)
+    end
+    
+    getgenv().WorldToScreenPoint = function(P) 
+        return Camera.WorldToScreenPoint(Camera, P)
+    end
+    
+    getgenv().GetObscuringObjects = function(T)
+        if T and T:FindFirstChild(getgenv().AimPart) and Client and Client.Character:FindFirstChild("Head") then 
+            local RayPos = workspace:FindPartOnRay(RNew(
+                T[getgenv().AimPart].Position, Client.Character.Head.Position)
+            )
+            if RayPos then return RayPos:IsDescendantOf(T) end
+        end
+    end
+    
+    getgenv().GetNearestTarget = function()
+        local players = {}
+        local PLAYER_HOLD  = {}
+        local DISTANCES = {}
+        for i, v in pairs(Players:GetPlayers()) do
+            if v ~= Client then
+                table.insert(players, v)
+            end
+        end
+        for i, v in pairs(players) do
+            if v.Character ~= nil then
+                local AIM = v.Character:FindFirstChild("Head")
+                if getgenv().TeamCheck == true and v.Team ~= Client.Team then
+                    local DISTANCE = (v.Character:FindFirstChild("Head").Position - game.Workspace.CurrentCamera.CFrame.p).magnitude
+                    local RAY = Ray.new(game.Workspace.CurrentCamera.CFrame.p, (Mouse.Hit.p - game.Workspace.CurrentCamera.CFrame.p).unit * DISTANCE)
+                    local HIT,POS = game.Workspace:FindPartOnRay(RAY, game.Workspace)
+                    local DIFF = math.floor((POS - AIM.Position).magnitude)
+                    PLAYER_HOLD[v.Name .. i] = {}
+                    PLAYER_HOLD[v.Name .. i].dist= DISTANCE
+                    PLAYER_HOLD[v.Name .. i].plr = v
+                    PLAYER_HOLD[v.Name .. i].diff = DIFF
+                    table.insert(DISTANCES, DIFF)
+                elseif getgenv().TeamCheck == false and v.Team == Client.Team then 
+                    local DISTANCE = (v.Character:FindFirstChild("Head").Position - game.Workspace.CurrentCamera.CFrame.p).magnitude
+                    local RAY = Ray.new(game.Workspace.CurrentCamera.CFrame.p, (Mouse.Hit.p - game.Workspace.CurrentCamera.CFrame.p).unit * DISTANCE)
+                    local HIT,POS = game.Workspace:FindPartOnRay(RAY, game.Workspace)
+                    local DIFF = math.floor((POS - AIM.Position).magnitude)
+                    PLAYER_HOLD[v.Name .. i] = {}
+                    PLAYER_HOLD[v.Name .. i].dist= DISTANCE
+                    PLAYER_HOLD[v.Name .. i].plr = v
+                    PLAYER_HOLD[v.Name .. i].diff = DIFF
+                    table.insert(DISTANCES, DIFF)
+                end
+            end
+        end
+        
+        if unpack(DISTANCES) == nil then
+            return nil
+        end
+        
+        local L_DISTANCE = math.floor(math.min(unpack(DISTANCES)))
+        if L_DISTANCE > getgenv().AimRadius then
+            return nil
+        end
+        
+        for i, v in pairs(PLAYER_HOLD) do
+            if v.diff == L_DISTANCE then
+                return v.plr
+            end
+        end
+        return nil
+    end
+    
+    
+    
+    RService.RenderStepped:Connect(function()
+        if getgenv().ThirdPerson == true and getgenv().FirstPerson == true then 
+            if (Camera.Focus.p - Camera.CoordinateFrame.p).Magnitude > 1 or (Camera.Focus.p - Camera.CoordinateFrame.p).Magnitude <= 1 then 
+                CanNotify = true 
+            else 
+                CanNotify = false 
+            end
+        elseif getgenv().ThirdPerson == true and getgenv().FirstPerson == false then 
+            if (Camera.Focus.p - Camera.CoordinateFrame.p).Magnitude > 1 then 
+                CanNotify = true 
+            else 
+                CanNotify = false 
+            end
+        elseif getgenv().ThirdPerson == false and getgenv().FirstPerson == true then 
+            if (Camera.Focus.p - Camera.CoordinateFrame.p).Magnitude <= 1 then 
+                CanNotify = true 
+            else 
+                CanNotify = false 
+            end
+        end
+        if Aimlock == true and MousePressed == true then 
+            if AimlockTarget and AimlockTarget.Character and AimlockTarget.Character:FindFirstChild(getgenv().AimPart) then 
+                if getgenv().FirstPerson == true then
+                    if CanNotify == true then
+                        if getgenv().PredictMovement == true then
+                            if getgenv().Smoothness == true then
+                                --// The part we're going to lerp/smoothen \\--
+                                local Main = CF(Camera.CFrame.p, AimlockTarget.Character[getgenv().AimPart].Position + AimlockTarget.Character[getgenv().AimPart].Velocity/PredictionVelocity)
+                                
+                                --// Making it work \\--
+                                Camera.CFrame = Camera.CFrame:Lerp(Main, getgenv().SmoothnessAmount, getgenv().EasingStyle , Enum.EasingDirection.InOut)
+                            else
+                                Camera.CFrame = CF(Camera.CFrame.p, AimlockTarget.Character[getgenv().AimPart].Position + AimlockTarget.Character[getgenv().AimPart].Velocity/PredictionVelocity)
+                            end
+                        elseif getgenv().PredictMovement == false then 
+                            if getgenv().Smoothness == true then
+                                --// The part we're going to lerp/smoothen \\--
+                                local Main = CF(Camera.CFrame.p, AimlockTarget.Character[getgenv().AimPart].Position)
+    
+                                --// Making it work \\--
+                                Camera.CFrame = Camera.CFrame:Lerp(Main, getgenv().SmoothnessAmount, getgenv().EasingStyle , Enum.EasingDirection.InOut)
+                            else
+                                Camera.CFrame = CF(Camera.CFrame.p, AimlockTarget.Character[getgenv().AimPart].Position)
+                            end
+                        end
+                    end
+                end
+            end
+        end
+       if getgenv().UnlockOnDeath  == true and AimlockTarget and AimlockTarget.Character:FindFirstChild("Humanoid") then
+        if AimlockTarget.StarterPlayer.StarterCharacterScripts.BodyEffects['K.O'] then
+            AimlockTarget = nil
+            
+            if getgenv().Notifications == true then
+                Notify({
+                    Title = BlazedName,
+                    Description = "Unlocked",
+                    Duration = 1
+                })
+            end
+            if getgenv().ChatNotis == true then
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Unlocked","All")
+            end
+        end
+    end
+    
+                if getgenv().Shake == true and AimlockTarget and AimlockTarget.Character then
+                    local Main = CF(Camera.CFrame.p, AimlockTarget.Character[getgenv().AimPart].Position + AimlockTarget.Character[getgenv().AimPart].Velocity/PredictionVelocity +
+                    Vector3.new(
+                        math.random(-getgenv().ShakePower, getgenv().ShakePower),
+                        math.random(-getgenv().ShakePower, getgenv().ShakePower),
+                        math.random(-getgenv().ShakePower, getgenv().ShakePower)
+                    ) * 0.1)
+                    Camera.CFrame = Camera.CFrame:Lerp(Main, getgenv().SmoothnessAmount, getgenv().EasingStyle , Enum.EasingDirection.InOut)
+                end
+    
+       if getgenv().AutoPrediction == true then
+        pingvalue = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+        split = string.split(pingvalue,'(')
+        ping = tonumber(split[1])
+    if ping < 30 then
+        getgenv().PredictionVelocity = 7.758
+    elseif ping < 40 then
+        getgenv().PredictionVelocity = 7.364
+    elseif ping < 50 then
+        getgenv().PredictionVelocity = 7.456 
+    elseif ping < 60 then
+        getgenv().PredictionVelocity = 7.217
+    elseif ping < 70 then
+        getgenv().PredictionVelocity = 6.972 
+    elseif ping < 80 then
+        getgenv().PredictionVelocity = 6.782
+    elseif ping < 90 then
+        getgenv().PredictionVelocity = 6.597 
+    elseif ping < 100 then
+        getgenv().PredictionVelocity = 3.88
+    elseif ping < 110 then
+        getgenv().PredictionVelocity = 6.099
+    end
+    end
+    
+    end)
+    
+    
+    
+    local repo = 'https://raw.githubusercontent.com/wally-rblx/LinoriaLib/main/'
+    local Library = loadstring(game:HttpGet('https://blazed.lol/Library/main.lua'))()
+    local ThemeManager = loadstring(game:HttpGet('https://blazed.lol/Library/theme.lua'))()
+    local SaveManager = loadstring(game:HttpGet('https://blazed.lol/Library/config.lua'))()
+    
+    local Window = Library:CreateWindow({
+        Title = 'blazed.lol | buyer build | five duels',
+        Center = true, 
+        AutoShow = true,
+        Size = UDim2.fromOffset(550, 560),
+        TabPadding = 4,
+    })
+    
+    
+    
+    local Tabs = {
+        Main = Window:AddTab('Aiming'),
+        ['Settings'] = Window:AddTab('Settings'),
+    }
+    
+    local LeftGroupBox
